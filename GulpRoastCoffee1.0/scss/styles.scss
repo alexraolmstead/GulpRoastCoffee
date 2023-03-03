@@ -1,0 +1,26 @@
+$fontsize: 18px;
+
+h2{
+  font-size: $fontsize + $fontsize;
+font-family: "Poppins", sans-serif;
+}
+
+@mixin iamsassay{
+  color: red;
+  background-color: black;
+}
+
+h1{
+  @include iamsassay;
+}
+
+@mixin crazyspacing($martin,$patrick) {
+  margin:$martin;
+  padding:$patrick;
+}
+
+h1{
+  @include crazyspacing(200px,200px);
+}
+
+@import "style.scss";
